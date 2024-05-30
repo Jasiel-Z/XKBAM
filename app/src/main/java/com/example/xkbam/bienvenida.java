@@ -69,9 +69,10 @@ public class bienvenida extends Fragment {
         // Initialize the VideoView
         videoView = view.findViewById(R.id.valky_video);
 
-        // Set the video URI to a public video URL for testing
-        Uri videoUri = Uri.parse("http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4");
-        videoView.setVideoURI(videoUri);
+        // Set the video URI, assuming the video is in the raw folder
+        String videoPath = "android.resource://" + getActivity().getPackageName() + "/" + R.raw.valky;
+        Uri uri = Uri.parse(videoPath);
+        videoView.setVideoURI(uri);
 
         // Set up media controller
         MediaController mediaController = new MediaController(getContext());
@@ -93,7 +94,7 @@ public class bienvenida extends Fragment {
         });
 
         // Log the video path for debugging
-        Log.d(TAG, "Video URL: " + videoUri.toString());
+        Log.d(TAG, "Video path: " + videoPath);
 
         return view;
     }
