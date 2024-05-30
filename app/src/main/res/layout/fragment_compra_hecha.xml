@@ -17,7 +17,7 @@
         android:layout_marginBottom="16dp"
         android:background="@android:color/transparent"
         android:contentDescription="Menu"
-        android:src="@drawable/icMenu" />
+        android:src="@drawable/ic_menu" />
 
     <ImageView
         android:id="@+id/logo"
@@ -38,7 +38,7 @@
         android:layout_alignParentEnd="true"
         android:layout_margin="16dp"
         android:background="@android:color/transparent"
-        android:src="@drawable/icCart"
+        android:src="@drawable/ic_cart"
         android:contentDescription="Cart" />
 
     <TextView
@@ -59,7 +59,7 @@
         android:layout_below="@id/thank_you_text"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:src="@drawable/icBag" />
+        android:src="@drawable/ic_bag" />
 
     <TextView
         android:id="@+id/purchase_message"
